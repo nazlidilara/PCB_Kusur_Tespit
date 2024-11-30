@@ -1,31 +1,28 @@
 # PCB_Kusur_Tespit_Algoritmasi
-Proje Açıklaması
-Bu proje, baskı devre kartları (PCB) üzerindeki üretim kusurlarını görüntü işleme teknikleriyle otomatik olarak tespit etmeyi amaçlayan bir bilgisayarla görü projesidir.
-Özellikler
+Proje Hakkında
+Bu proje, baskı devre kartları (PCB) üzerindeki üretim kusurlarını otomatik olarak tespit etmeyi amaçlamaktadır. Algoritma, bir referans görüntüyü test edilen görüntüyle karşılaştırarak kusurları belirler. Proje, üretim hatalarını hızlı ve doğru bir şekilde analiz etmek için etkili bir çözüm sunar.
 
-SIFT algoritması ile görüntü hizalama
-Farklı kusur kategorilerini tespit etme
-Yüksek doğruluk ve geri çağırma oranları
+Özellikler
+Görüntü Hizalama: SIFT algoritması kullanılarak referans ve test görüntüleri arasında homografi matrisi oluşturulur.
+Kusur Tespiti: Görüntü fark analizi ve kontur tespiti ile potansiyel kusurlar belirlenir.
+Kusur Karşılaştırması: Tespit edilen kusurlar, etiketlenmiş verilerle doğruluk ve geri çağırma oranları hesaplanarak karşılaştırılır.
+Sonuç Görselleştirme: Tespit edilen kusurlar ve etiketler renkli görsellerle kullanıcıya sunulur.
 
 Kullanılan Teknolojiler
-
 Python
 OpenCV
 NumPy
 Matplotlib
+Projenin Çalıştırılması
+Gerekli Python kütüphanelerini yükleyin:
 
-Kurulum
+pip install opencv-python numpy matplotlib
 
-Gerekli kütüphaneleri yükleyin
+Projeyi indirip tespit.py dosyasını çalıştırın:
 
-bashCopypip install opencv-python numpy matplotlib
-Tespit Edilen Kusur Kategorileri
+python tespit.py
 
-Eksik Delik
-Fare Isırığı
-Açık Devre
-
-Performans
-
-Ortalama Doğruluk: %85
-Ortalama Geri Çağırma: %90
+Referans ve test görüntülerinin yollarını tespit.py dosyasındaki ilgili bölüme ekleyin.
+Çalıştırarak kusur tespiti sonuçlarını ve görselleştirmeleri gözlemleyin.
+Sonuçlar ve Çıkarımlar
+Algoritma, çeşitli PCB kusurlarını (%85 doğruluk ve %90 geri çağırma oranıyla) başarıyla tespit edebilmiştir. Ancak, görüntü kalitesi ve aydınlatma değişiklikleri doğruluk oranını etkileyebilir.
