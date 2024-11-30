@@ -24,5 +24,7 @@ python tespit.py
 
 Referans ve test görüntülerinin yollarını tespit.py dosyasındaki ilgili bölüme ekleyin.
 Çalıştırarak kusur tespiti sonuçlarını ve görselleştirmeleri gözlemleyin.
-Sonuçlar ve Çıkarımlar
+ 
+Sonuçlar ve Çıkarımlar 
+
 Algoritma, çeşitli PCB kusurlarını (%85 doğruluk ve %90 geri çağırma oranıyla) başarıyla tespit edebilmiştir. Ancak, görüntü kalitesi ve aydınlatma değişiklikleri doğruluk oranını etkileyebilir.
